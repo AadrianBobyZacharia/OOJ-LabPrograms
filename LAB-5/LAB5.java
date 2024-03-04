@@ -71,6 +71,7 @@ public class Main1{
     int opt=0;
     String type=null;
     Scanner x=new Scanner(System.in);
+    System.out.print("Aadrian Boby Zacharia\n1BM19CS190\n");
     System.out.println("Welcome to the bank service");
     System.out.println("Enter the type of account (curr_acct/sav_acct)");
     type=x.nextLine();

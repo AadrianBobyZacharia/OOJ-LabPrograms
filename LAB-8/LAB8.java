@@ -1,50 +1,33 @@
-import java.util.*;
-
-class WrongAge extends Exception{
-    private static final long serialVersionUID = 1L;
-    String str;
-    WrongAge(String s) {
-        str=s;
+class NewThread implements Runnable{
+    Thread t;
+    NewThread(){
+        t=new Thread(this,"New Thread");
+        t.start();
     }
-    public String toString(){
-        return "WrongAge: "+str;
-    }
-}
-
-class Father{
-    public int age;
-    public Father(int a) throws WrongAge{
-        age=a;
-        if(a<0)
-            throw new WrongAge("Age cannot be less than 0");
-        else
-            System.out.println("Valid");
-    }   
-}
-
-class Son{
-    Son(int s,int f) throws WrongAge{
-        if(s>=f)
-            throw new WrongAge("Son's age cannot be greater than or equal to father's age");
-        else
-            System.out.println("Valid");
-    }
-}
-
-class prog8{
-    public static void main(String args[]){
+    public void run(){
         try{
-            Scanner sc=new Scanner(System.in);
-            System.out.print("Aadrian Boby Zacharia\n1BM19CS190\n");
-            int f,s;
-            System.out.print("Enter father's age: ");
-            f=sc.nextInt();
-            System.out.print("Enter son's age: ");
-            s=sc.nextInt();
-            Father ob1 = new Father(f);
-            Son ob2 = new Son(s,f);
+            while(true){
+                System.out.println("CSE");
+                Thread.sleep(2000);
+            }
         }
-        catch(WrongAge e){
+        catch(InterruptedException e){
+            System.out.println(e);
+        }
+    }
+}
+
+class prog9{
+    public static void main(String args[]){
+        System.out.print("Aadrian Boby Zacharia\n1BM19CS190\n");
+        NewThread t=new NewThread();
+        try{
+            while(true){
+                System.out.println("BMS College of Engineering");
+                Thread.sleep(10000);
+            }
+        }
+        catch(InterruptedException e){
             System.out.println(e);
         }
     }

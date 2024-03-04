@@ -7,6 +7,7 @@ import java.util.*;
 		int[] marks;
 		String name;
 		Scanner sc=new Scanner(System.in);
+	System.out.print("Aadrian Boby Zacharia\n1BM19CS190\n");
         System.out.println("Enter the Number Of Subjects");
         n=sc.nextInt();
         credits=new int[n];

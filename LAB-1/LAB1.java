@@ -7,6 +7,7 @@ return d;
 public static void main(String[] args){
 double r1,r2,real,imag;
 Scanner x=new Scanner(System.in);
+System.out.print("Aadrian Boby Zacharia\n1BM19CS190\n");
 System.out.print("enter the a,b,c values:");
 int a=x.nextInt();
 int b=x.nextInt();

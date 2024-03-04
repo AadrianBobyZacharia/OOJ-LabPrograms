@@ -31,6 +31,7 @@ public class Main{
   public static void main(String[] args){
     int n=0;
     Scanner x=new Scanner(System.in);
+    System.out.print("Aadrian Boby Zacharia\n1BM19CS190\n");
     System.out.print("enter the value for n:");
     n=x.nextInt();
     book[] b=new book[n];

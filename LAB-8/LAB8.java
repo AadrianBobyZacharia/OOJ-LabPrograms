@@ -35,6 +35,7 @@ class prog8{
     public static void main(String args[]){
         try{
             Scanner sc=new Scanner(System.in);
+            System.out.print("Aadrian Boby Zacharia\n1BM19CS190\n");
             int f,s;
             System.out.print("Enter father's age: ");
             f=sc.nextInt();

@@ -43,6 +43,7 @@ class Gen<T> {
 class prog7{
     public static void main(String args[]){
         Gen<Integer> obj1=new Gen<Integer>(2,1);
+        System.out.print("Aadrian Boby Zacharia\n1BM19CS190\n");
         obj1.showdata();
         System.out.println("Sum:"+obj1.sum());
         Gen<Double> obj2=new Gen<Double>(4.5,3.2);

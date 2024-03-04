@@ -37,6 +37,7 @@ System.out.println("The area of circle is: "+area_circle);
 class abs{
 public static void main(String[] args){
 rectangle rec = new rectangle();
+System.out.print("Aadrian Boby Zacharia\n1BM19CS190\n");
 rec.print_area();
 triangle tri = new triangle();
 tri.print_area();

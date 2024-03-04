@@ -7,6 +7,7 @@ class Main
 	public static void main(String args[])
 	{
 		Scanner sx = new Scanner(System.in);
+		System.out.print("Aadrian Boby Zacharia\n1BM19CS190\n");
 		System.out.println("Enter the number of students");
 		int n= sx.nextInt();
 		CIE.internals in[]= new CIE.internals[n];

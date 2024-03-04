@@ -19,6 +19,7 @@ class NewThread implements Runnable{
 
 class prog9{
     public static void main(String args[]){
+        System.out.print("Aadrian Boby Zacharia\n1BM19CS190\n");
         NewThread t=new NewThread();
         try{
             while(true){
